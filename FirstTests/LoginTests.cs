@@ -68,14 +68,20 @@ namespace FirstTests
                 By.CssSelector("[data-test='error']")
             );
 
-            string actualMessage = errorMessage.Text;
+            // Kiểm tra thông báo lỗi hiện ra
+            Assert.That(errorMessage.Displayed, Is.True,
+                "Thông báo lỗi phải hiển thị.");
 
             // Kiểm tra nội dung thông báo lỗi
             Assert.That(
-                actualMessage,
+                errorMessage.Text,
                 Is.EqualTo("Epic sadface: Sorry, this user has been locked out."),
                 "Thông báo lỗi không đúng."
             );
+
+            // Kiểm tra vẫn ở trang đăng nhập
+            Assert.That(driver.Url, Does.Not.Contain("inventory.html"),
+                "Người dùng bị khóa không được vào trang inventory.");
 
             TestContext.WriteLine("Đăng nhập thất bại đúng như mong đợi!");
         }
@@ -108,12 +114,12 @@ namespace FirstTests
             {
                 // Lấy tên sản phẩm bên trong từng item
                 string name = item.FindElement(
-                    By.ClassName("inventory_item_name")
+                    By.CssSelector("[data-test='inventory-item-name']")
                 ).Text;
 
                 // Lấy giá sản phẩm bên trong từng item
                 string price = item.FindElement(
-                    By.ClassName("inventory_item_price")
+                    By.CssSelector("[data-test='inventory-item-price']")
                 ).Text;
 
                 TestContext.WriteLine("Tên: " + name);
