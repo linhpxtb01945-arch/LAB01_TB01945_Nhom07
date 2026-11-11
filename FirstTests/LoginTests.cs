@@ -140,5 +140,75 @@ namespace FirstTests
                 Does.Contain("Sauce Labs Backpack")
             );
         }
+
+        // CA 4: Thêm sản phẩm vào giỏ hàng
+        [Test]
+        public void AddProductToCart()
+        {
+            // Bước 1: Đăng nhập
+            Login("standard_user", "secret_sauce");
+
+            // Bước 2: Khởi tạo Explicit Wait
+            WebDriverWait wait = new WebDriverWait(
+                driver,
+                TimeSpan.FromSeconds(10)
+            );
+
+            // Bước 3: Tìm và nhấn nút Add to cart
+            IWebElement addButton = wait.Until(d =>
+            {
+                var button = d.FindElement(
+                    By.Id("add-to-cart-sauce-labs-backpack")
+                );
+
+                return button.Displayed && button.Enabled
+                    ? button
+                    : null;
+            });
+
+            addButton.Click();
+
+            // Bước 4: Kiểm tra số lượng sản phẩm trong giỏ
+            string cartCount = wait.Until(d =>
+            {
+                var badge = d.FindElements(
+                    By.CssSelector("[data-test='shopping-cart-badge']")
+                );
+
+                return badge.Count > 0 ? badge[0].Text : null;
+            });
+
+            Assert.That(cartCount, Is.EqualTo("1"),
+                "Giỏ hàng phải có 1 sản phẩm.");
+
+            // Bước 5: Mở giỏ hàng
+            driver.FindElement(
+                By.CssSelector("[data-test='shopping-cart-link']")
+            ).Click();
+
+            // Bước 6: Chờ trang giỏ hàng tải xong
+            wait.Until(d => d.Url.Contains("cart.html"));
+
+            // Bước 7: Kiểm tra tên sản phẩm trong giỏ
+            string productName = wait.Until(d =>
+            {
+                var item = d.FindElements(
+                    By.CssSelector("[data-test='inventory-item-name']")
+                );
+
+                return item.Count > 0 ? item[0].Text : null;
+            });
+
+            Assert.That(
+                productName,
+                Is.EqualTo("Sauce Labs Backpack"),
+                "Sản phẩm trong giỏ hàng không đúng."
+            );
+
+            TestContext.WriteLine("Sản phẩm: " + productName);
+            TestContext.WriteLine("Số lượng trong giỏ: " + cartCount);
+            TestContext.WriteLine("Kiểm tra giỏ hàng thành công!");
+        }
+
     }
 }

@@ -20,15 +20,31 @@ namespace FirstTests
             Assert.That(finish.Text, Is.EqualTo("Hello World!"));
         }
 
-        // BƯỚC 2: thêm Explicit Wait -> PASS
+        // BƯỚC 2: Có Explicit Wait -> PASS
         [Test]
         public void A2_CoExplicitWait_Pass()
         {
             driver.Navigate().GoToUrl(Url);
+
+            // Nhấn nút Start
             driver.FindElement(By.CssSelector("#start button")).Click();
 
-            IWebElement finish = wait.Until(d => d.FindElement(By.Id("finish")));
+            // Chờ phần tử xuất hiện, hiển thị và có nội dung chính xác
+            IWebElement finish = wait.Until(d =>
+            {
+                var element = d.FindElement(By.Id("finish"));
+
+                return element.Displayed &&
+                       element.Text == "Hello World!"
+                    ? element
+                    : null;
+            });
+
+            // Kiểm tra nội dung
             Assert.That(finish.Text, Is.EqualTo("Hello World!"));
+
+            TestContext.WriteLine("Nội dung: " + finish.Text);
+            TestContext.WriteLine("Explicit Wait hoạt động thành công!");
         }
     }
 }
