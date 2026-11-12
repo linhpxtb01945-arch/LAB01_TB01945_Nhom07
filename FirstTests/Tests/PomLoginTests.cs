@@ -3,7 +3,7 @@ using NUnit.Framework;
 using FirstTests.Pages;
 using System.Collections.Generic;
 
-namespace FirstTests
+namespace FirstTests.Tests
 {
     public class PomLoginTests : BaseTest
     {

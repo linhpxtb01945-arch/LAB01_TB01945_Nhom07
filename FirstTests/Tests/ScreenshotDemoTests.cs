@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace FirstTests
+namespace FirstTests.Tests
 {
     public class ScreenshotDemoTests : BaseTest
     {

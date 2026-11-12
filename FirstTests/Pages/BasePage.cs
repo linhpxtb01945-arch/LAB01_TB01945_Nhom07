@@ -10,20 +10,29 @@ namespace FirstTests.Pages
         protected readonly IWebDriver driver;
         protected readonly WebDriverWait wait;
 
-        // Khởi tạo WebDriver và Explicit Wait
+        // Nhận WebDriver từ BaseTest
         protected BasePage(IWebDriver driver)
         {
             this.driver = driver;
+
+            // Explicit Wait tối đa 10 giây
             wait = new WebDriverWait(
                 driver,
                 TimeSpan.FromSeconds(10)
             );
         }
 
-        // Tìm phần tử và chờ phần tử xuất hiện
-        protected IWebElement Tim(By by)
+        // Tìm phần tử và chờ đến khi phần tử hiển thị
+        protected IWebElement Tim(By locator)
         {
-            return wait.Until(d => d.FindElement(by));
+            return wait.Until(d =>
+            {
+                var element = d.FindElement(locator);
+
+                return element.Displayed
+                    ? element
+                    : null;
+            });
         }
     }
 }
