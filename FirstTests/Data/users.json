@@ -58,5 +58,11 @@
     "Password": "secret_sauce",
     "ThanhCong": false,
     "GhiChu": "Ca biên: sai chữ hoa/thường tài khoản"
+  },
+  {
+    "Username": "visual_user",
+    "Password": "secret_sauce",
+    "ThanhCong": true,
+    "GhiChu": "Tài khoản visual_user"
   }
 ]
