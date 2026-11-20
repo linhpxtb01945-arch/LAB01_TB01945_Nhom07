@@ -2,7 +2,7 @@
   {
     "Username": "standard_user",
     "Password": "secret_sauce",
-    "ThanhCong": true,
+    "ThanhCong": false,
     "GhiChu": "Tài khoản chuẩn — luồng thuận"
   },
   {

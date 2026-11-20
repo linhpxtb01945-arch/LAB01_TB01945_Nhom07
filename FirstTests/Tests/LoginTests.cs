@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace FirstTests.Tests
 {
+    [Category("Login")]
     public class LoginTests : BaseTest
     {
         // BaseTest đã mở sẵn trang đăng nhập (BaseUrl trong appsettings.json)
@@ -11,6 +12,7 @@ namespace FirstTests.Tests
 
         // CA 1: Đăng nhập thành công
         [Test]
+        [Category("Smoke")]
         public void Login_Success()
         {
             InventoryPage inventoryPage =

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 namespace FirstTests.Tests
 {
+    [Category("Inventory")]
     public class PomLoginTests : BaseTest
     {
         // BaseTest đã mở sẵn trang đăng nhập (BaseUrl trong appsettings.json)
@@ -13,6 +14,7 @@ namespace FirstTests.Tests
 
         // CA 1: Đăng nhập thành công bằng POM
         [Test]
+        [Category("Smoke")]
         public void POM_Login_Success()
         {
             InventoryPage inventoryPage = loginPage

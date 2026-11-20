@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="8ae8bce6-06ed-4748-babf-3b7bbd321e4c" name="Xuan Linh@LAPTOP-5QJLTJMQ 2026-11-20 18:29:39" runUser="LAPTOP-5QJLTJMQ\Xuan Linh" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-20T18:29:39.0854254+07:00" queuing="2026-11-20T18:29:39.0854260+07:00" start="2026-11-20T18:29:27.6930013+07:00" finish="2026-11-20T18:32:09.0992581+07:00" />
+  <TestSettings name="default" id="231f03a2-e852-487a-8a66-cbe1644ef776">
+    <Deployment runDeploymentRoot="Xuan_Linh_LAPTOP-5QJLTJMQ_2026-11-20_18_29_39" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="90dae51a-07f2-4325-ab6f-092d00505f24" testId="3811976c-a580-6b93-b3df-c00d0cc0127c" testName="DangNhap_09_chuoi_dai" computerName="LAPTOP-5QJLTJMQ" duration="00:00:07.0685780" startTime="2026-11-20T18:30:59.5597559+07:00" endTime="2026-11-20T18:31:06.6283328+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90dae51a-07f2-4325-ab6f-092d00505f24" />
+    <UnitTestResult executionId="d4208bf6-7362-407b-b867-f556a4af36af" testId="bb2c7ec5-dc61-bef1-6b3b-3caaa7c472f7" testName="Login_Success" computerName="LAPTOP-5QJLTJMQ" duration="00:00:04.6419840" startTime="2026-11-20T18:31:45.7154572+07:00" endTime="2026-11-20T18:31:50.3574393+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4208bf6-7362-407b-b867-f556a4af36af">
+      <Output>
+        <StdOut>Đăng nhập thành công!</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8290949e-b2bc-4e66-9a87-fdf982da970f" testId="6e0c69d5-9e52-44d8-7cfd-66edc4e6c9a1" testName="DangNhap_02_locked_out_user" computerName="LAPTOP-5QJLTJMQ" duration="00:00:06.4696190" startTime="2026-11-20T18:30:17.7283231+07:00" endTime="2026-11-20T18:30:24.1979413+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8290949e-b2bc-4e66-9a87-fdf982da970f" />
+    <UnitTestResult executionId="a19843e0-10cc-407c-aae4-4dc7977aef22" testId="eff05928-61b0-0c54-c445-c3cb3422a00b" testName="OpenSauceDemo_CheckPageTitle" computerName="LAPTOP-5QJLTJMQ" duration="00:00:03.1536250" startTime="2026-11-20T18:32:02.1385094+07:00" endTime="2026-11-20T18:32:05.2921337+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a19843e0-10cc-407c-aae4-4dc7977aef22">
+      <Output>
+        <StdOut>Page title: Swag Labs</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a398cd3d-d019-4f9c-8c51-f74f75829b9c" testId="941abd86-11b4-9a2c-8903-aaec04cf88d2" testName="C3_JsPrompt_SendKeysAndAccept" computerName="LAPTOP-5QJLTJMQ" duration="00:00:09.7400680" startTime="2026-11-20T18:29:49.5129729+07:00" endTime="2026-11-20T18:29:59.2530404+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a398cd3d-d019-4f9c-8c51-f74f75829b9c" />
+    <UnitTestResult executionId="1098d55d-dca6-482a-a2bb-97be8e0a8561" testId="f47247c8-047f-8ac7-fe77-15b8b4a122f3" testName="DangNhap_08_ky_tu_dac_biet" computerName="LAPTOP-5QJLTJMQ" duration="00:00:06.3033469" startTime="2026-11-20T18:30:53.2563637+07:00" endTime="2026-11-20T18:30:59.5597099+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1098d55d-dca6-482a-a2bb-97be8e0a8561" />
+    <UnitTestResult executionId="8d030ef2-b8e0-40ba-a5e3-914b980699b3" testId="e353fcad-5bc6-ad2d-c123-49a60e8554bc" testName="DangNhap_01_standard_user" computerName="LAPTOP-5QJLTJMQ" duration="00:00:03.8463670" startTime="2026-11-20T18:30:13.8815096+07:00" endTime="2026-11-20T18:30:17.7278745+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d030ef2-b8e0-40ba-a5e3-914b980699b3">
+      <Output>
+        <ErrorInfo>
+          <Message>  Tài khoản chuẩn — luồng thuận&#xD;
+Assert.That(trangSanPham.DaHienThi(), Is.EqualTo(mongDoiThanhCong))&#xD;
+  Expected: False&#xD;
+  But was:  True&#xD;
+</Message>
+          <StackTrace>   at FirstTests.Tests.DataDrivenLoginTests.DangNhap_TuFileJson(String tk, String mk, Boolean mongDoiThanhCong, String ghiChu) in D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\Tests\DataDrivenLoginTests.cs:line 55&#xD;
+
+1)    at FirstTests.Tests.DataDrivenLoginTests.DangNhap_TuFileJson(String tk, String mk, Boolean mongDoiThanhCong, String ghiChu) in D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\Tests\DataDrivenLoginTests.cs:line 55&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="LAPTOP-5QJLTJMQ\DangNhap_01_standard_user_183017349.png" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="e6843af4-9d1a-4a40-b0df-4c97f05772eb" testId="eb656a3d-f9cc-726d-c06f-b349e4eeed8d" testName="D1_CoY_LamRot_DeChupAnh" computerName="LAPTOP-5QJLTJMQ" duration="00:00:00.0000600" startTime="2026-11-20T18:32:05.2927982+07:00" endTime="2026-11-20T18:32:05.2928588+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e6843af4-9d1a-4a40-b0df-4c97f05772eb">
+      <Output>
+        <StdOut>Cố ý rớt để sinh ảnh minh chứng Phần D</StdOut>
+        <ErrorInfo>
+          <Message>Cố ý rớt để sinh ảnh minh chứng Phần D</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bf4cf85f-6f14-451e-a22d-39906afc19d5" testId="90801ede-b181-a873-ca07-40a920314330" testName="DangNhap_06_khong_ton_tai" computerName="LAPTOP-5QJLTJMQ" duration="00:00:06.5020070" startTime="2026-11-20T18:30:40.3537341+07:00" endTime="2026-11-20T18:30:46.8557407+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf4cf85f-6f14-451e-a22d-39906afc19d5" />
+    <UnitTestResult executionId="8ccc50e7-a89d-4369-8ff4-46e8802538d9" testId="1014f073-4cdd-bfa3-b367-1a9daaccf6a4" testName="A1_KhongWait_RotNoSuchElement" computerName="LAPTOP-5QJLTJMQ" duration="00:00:00.0003880" startTime="2026-11-20T18:31:16.7307794+07:00" endTime="2026-11-20T18:31:16.7311676+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ccc50e7-a89d-4369-8ff4-46e8802538d9">
+      <Output>
+        <StdOut>Bước 1: cố ý rớt để chụp ảnh minh chứng Phần A</StdOut>
+        <ErrorInfo>
+          <Message>Bước 1: cố ý rớt để chụp ảnh minh chứng Phần A</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="de4172ac-c5c1-494d-a5f2-7e0cd674722d" testId="eea260ed-1e05-e552-b62e-48316ef3db60" testName="DangNhap_10_STANDARD_USER" computerName="LAPTOP-5QJLTJMQ" duration="00:00:06.5858060" startTime="2026-11-20T18:31:06.6283905+07:00" endTime="2026-11-20T18:31:13.2141939+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de4172ac-c5c1-494d-a5f2-7e0cd674722d" />
+    <UnitTestResult executionId="0a2c36b9-6f66-4e6a-972c-ddf1e41c76b2" testId="db30b674-2265-cc0d-133f-dc36e7385698" testName="DangNhap_03_problem_user" computerName="LAPTOP-5QJLTJMQ" duration="00:00:03.3569210" startTime="2026-11-20T18:30:24.1979894+07:00" endTime="2026-11-20T18:30:27.5549088+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0a2c36b9-6f66-4e6a-972c-ddf1e41c76b2" />
+    <UnitTestResult executionId="a2e781e8-293d-4e34-9ae0-fc4b9a20c70f" testId="efafad7e-b705-1b06-0971-9e8d156bd884" testName="C2_JsConfirm_Dismiss" computerName="LAPTOP-5QJLTJMQ" duration="00:00:10.4746170" startTime="2026-11-20T18:29:39.0381790+07:00" endTime="2026-11-20T18:29:49.5127947+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2e781e8-293d-4e34-9ae0-fc4b9a20c70f" />
+    <UnitTestResult executionId="5f134399-72e2-4e26-a6f4-05bfd3ef733f" testId="e7647de3-2083-d1d9-570d-3d10e5ecdfe6" testName="DangNhap_11_visual_user" computerName="LAPTOP-5QJLTJMQ" duration="00:00:03.5159890" startTime="2026-11-20T18:31:13.2142776+07:00" endTime="2026-11-20T18:31:16.7302657+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f134399-72e2-4e26-a6f4-05bfd3ef733f" />
+    <UnitTestResult executionId="56ac7b00-d3a4-4602-88ca-2c6d1045d099" testId="30b0e967-b500-8950-d186-8faf500a5ba0" testName="DangNhap_07__standard_user_" computerName="LAPTOP-5QJLTJMQ" duration="00:00:06.4005320" startTime="2026-11-20T18:30:46.8557881+07:00" endTime="2026-11-20T18:30:53.2563192+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56ac7b00-d3a4-4602-88ca-2c6d1045d099" />
+    <UnitTestResult executionId="b8859472-d1d6-43bf-a06f-c5609da3227c" testId="8a94e02b-d534-9862-030b-7494e4de9a68" testName="AddProductToCart" computerName="LAPTOP-5QJLTJMQ" duration="00:00:03.6753990" startTime="2026-11-20T18:31:31.5838826+07:00" endTime="2026-11-20T18:31:35.2592810+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8859472-d1d6-43bf-a06f-c5609da3227c">
+      <Output>
+        <StdOut>Sản phẩm: Sauce Labs Backpack&#xD;
+Số lượng trong giỏ: 1&#xD;
+Kiểm tra giỏ hàng thành công!</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7ec5b74e-0c16-4611-b4b8-95d9340d5f68" testId="72bb8061-ff12-0b2e-fd33-7048c68d78af" testName="C4_Iframe_GoChuVaoTrinhSoanThao" computerName="LAPTOP-5QJLTJMQ" duration="00:00:14.6245280" startTime="2026-11-20T18:29:59.2530868+07:00" endTime="2026-11-20T18:30:13.8776133+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ec5b74e-0c16-4611-b4b8-95d9340d5f68" />
+    <UnitTestResult executionId="61e6f952-a223-42a6-8493-7811027625f5" testId="79026e7f-23f4-9aaa-fbcb-e1e875cddc47" testName="DangNhap_05_standard_user" computerName="LAPTOP-5QJLTJMQ" duration="00:00:06.3357810" startTime="2026-11-20T18:30:34.0177141+07:00" endTime="2026-11-20T18:30:40.3534935+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61e6f952-a223-42a6-8493-7811027625f5" />
+    <UnitTestResult executionId="6cb8cbe9-dd56-400a-9718-cd27b98b95af" testId="c88e135f-f471-7e52-1e79-f29f9853b593" testName="POM_CheckProductCount" computerName="LAPTOP-5QJLTJMQ" duration="00:00:04.2726290" startTime="2026-11-20T18:31:50.3581813+07:00" endTime="2026-11-20T18:31:54.6308088+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6cb8cbe9-dd56-400a-9718-cd27b98b95af">
+      <Output>
+        <StdOut>Số lượng sản phẩm: 6</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="92631807-b5dd-4f7e-812b-54ca68fc38be" testId="601ad8f6-6f95-500d-f7c4-e15a02c07336" testName="B1_SapXepPriceLowToHigh_GiaTangDan" computerName="LAPTOP-5QJLTJMQ" duration="00:00:03.6806560" startTime="2026-11-20T18:32:05.2931363+07:00" endTime="2026-11-20T18:32:08.9737902+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="92631807-b5dd-4f7e-812b-54ca68fc38be" />
+    <UnitTestResult executionId="49ba1342-77d9-4a6c-9263-359be91c57cd" testId="557b786b-f01d-c9de-04e6-7932d0efb8cf" testName="POM_Login_Success" computerName="LAPTOP-5QJLTJMQ" duration="00:00:03.6526100" startTime="2026-11-20T18:31:58.4853635+07:00" endTime="2026-11-20T18:32:02.1379732+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49ba1342-77d9-4a6c-9263-359be91c57cd">
+      <Output>
+        <StdOut>Đăng nhập bằng POM thành công!</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a3df660b-b605-4156-b950-3af9ac5597de" testId="1ec001dc-f543-b366-b538-eadf28b2616c" testName="Login_LockedOutUser" computerName="LAPTOP-5QJLTJMQ" duration="00:00:06.6260210" startTime="2026-11-20T18:31:39.0893437+07:00" endTime="2026-11-20T18:31:45.7153630+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3df660b-b605-4156-b950-3af9ac5597de">
+      <Output>
+        <StdOut>Đăng nhập thất bại đúng như mong đợi!</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="80767d23-4525-4fbe-b2da-c0c6abdfd80d" testId="17659672-c03b-e826-e0a4-006ebc1da07c" testName="DangNhap_04_trong" computerName="LAPTOP-5QJLTJMQ" duration="00:00:06.4626720" startTime="2026-11-20T18:30:27.5549821+07:00" endTime="2026-11-20T18:30:34.0176532+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80767d23-4525-4fbe-b2da-c0c6abdfd80d" />
+    <UnitTestResult executionId="856243e1-b371-45bb-b95b-25b9dc4dc94f" testId="c1e02ffb-687f-d048-5bac-74e0b6f95ad6" testName="GetProductInformation" computerName="LAPTOP-5QJLTJMQ" duration="00:00:03.8299500" startTime="2026-11-20T18:31:35.2593276+07:00" endTime="2026-11-20T18:31:39.0892765+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="856243e1-b371-45bb-b95b-25b9dc4dc94f">
+      <Output>
+        <StdOut>Tên: Sauce Labs Backpack&#xD;
+Giá: $29.99&#xD;
+Tên: Sauce Labs Bike Light&#xD;
+Giá: $9.99&#xD;
+Tên: Sauce Labs Bolt T-Shirt&#xD;
+Giá: $15.99&#xD;
+Tên: Sauce Labs Fleece Jacket&#xD;
+Giá: $49.99&#xD;
+Tên: Sauce Labs Onesie&#xD;
+Giá: $7.99&#xD;
+Tên: Test.allTheThings() T-Shirt (Red)&#xD;
+Giá: $15.99</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="54d5b659-e185-48c3-bb6a-2ecc279b9396" testId="8de7cd41-7cc2-0190-7b4b-3efd5fec3a28" testName="POM_GetProductNames" computerName="LAPTOP-5QJLTJMQ" duration="00:00:03.8543830" startTime="2026-11-20T18:31:54.6308709+07:00" endTime="2026-11-20T18:31:58.4852510+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54d5b659-e185-48c3-bb6a-2ecc279b9396">
+      <Output>
+        <StdOut>Sản phẩm: Sauce Labs Backpack&#xD;
+Sản phẩm: Sauce Labs Bike Light&#xD;
+Sản phẩm: Sauce Labs Bolt T-Shirt&#xD;
+Sản phẩm: Sauce Labs Fleece Jacket&#xD;
+Sản phẩm: Sauce Labs Onesie&#xD;
+Sản phẩm: Test.allTheThings() T-Shirt (Red)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bd65808e-2598-4953-bce5-de0a406b9a9b" testId="200b688d-63af-dcda-76ca-5c4ffd75401d" testName="A2_CoExplicitWait_Pass" computerName="LAPTOP-5QJLTJMQ" duration="00:00:14.8522660" startTime="2026-11-20T18:31:16.7311861+07:00" endTime="2026-11-20T18:31:31.5834510+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd65808e-2598-4953-bce5-de0a406b9a9b">
+      <Output>
+        <StdOut>Nội dung: Hello World!&#xD;
+Explicit Wait hoạt động thành công!</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ffc0d81d-3104-4a3e-ac19-dca96e3a6916" testId="b30facc2-15cf-63a4-2a3c-4036f9d4505d" testName="C1_JsAlert_Accept" computerName="LAPTOP-5QJLTJMQ" duration="00:00:10.4825890" startTime="2026-11-20T18:29:28.5534953+07:00" endTime="2026-11-20T18:29:39.0360115+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffc0d81d-3104-4a3e-ac19-dca96e3a6916" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DangNhap_02_locked_out_user" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="6e0c69d5-9e52-44d8-7cfd-66edc4e6c9a1">
+      <Execution id="8290949e-b2bc-4e66-9a87-fdf982da970f" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DataDrivenLoginTests" name="DangNhap_02_locked_out_user" />
+    </UnitTest>
+    <UnitTest name="DangNhap_01_standard_user" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="e353fcad-5bc6-ad2d-c123-49a60e8554bc">
+      <Execution id="8d030ef2-b8e0-40ba-a5e3-914b980699b3" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DataDrivenLoginTests" name="DangNhap_01_standard_user" />
+    </UnitTest>
+    <UnitTest name="DangNhap_07__standard_user_" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="30b0e967-b500-8950-d186-8faf500a5ba0">
+      <Execution id="56ac7b00-d3a4-4602-88ca-2c6d1045d099" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DataDrivenLoginTests" name="DangNhap_07__standard_user_" />
+    </UnitTest>
+    <UnitTest name="C4_Iframe_GoChuVaoTrinhSoanThao" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="72bb8061-ff12-0b2e-fd33-7048c68d78af">
+      <Execution id="7ec5b74e-0c16-4611-b4b8-95d9340d5f68" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.AlertIframeTests" name="C4_Iframe_GoChuVaoTrinhSoanThao" />
+    </UnitTest>
+    <UnitTest name="C3_JsPrompt_SendKeysAndAccept" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="941abd86-11b4-9a2c-8903-aaec04cf88d2">
+      <Execution id="a398cd3d-d019-4f9c-8c51-f74f75829b9c" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.AlertIframeTests" name="C3_JsPrompt_SendKeysAndAccept" />
+    </UnitTest>
+    <UnitTest name="DangNhap_09_chuoi_dai" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="3811976c-a580-6b93-b3df-c00d0cc0127c">
+      <Execution id="90dae51a-07f2-4325-ab6f-092d00505f24" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DataDrivenLoginTests" name="DangNhap_09_chuoi_dai" />
+    </UnitTest>
+    <UnitTest name="C2_JsConfirm_Dismiss" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="efafad7e-b705-1b06-0971-9e8d156bd884">
+      <Execution id="a2e781e8-293d-4e34-9ae0-fc4b9a20c70f" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.AlertIframeTests" name="C2_JsConfirm_Dismiss" />
+    </UnitTest>
+    <UnitTest name="D1_CoY_LamRot_DeChupAnh" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="eb656a3d-f9cc-726d-c06f-b349e4eeed8d">
+      <Execution id="e6843af4-9d1a-4a40-b0df-4c97f05772eb" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.ScreenshotDemoTests" name="D1_CoY_LamRot_DeChupAnh" />
+    </UnitTest>
+    <UnitTest name="DangNhap_06_khong_ton_tai" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="90801ede-b181-a873-ca07-40a920314330">
+      <Execution id="bf4cf85f-6f14-451e-a22d-39906afc19d5" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DataDrivenLoginTests" name="DangNhap_06_khong_ton_tai" />
+    </UnitTest>
+    <UnitTest name="DangNhap_11_visual_user" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="e7647de3-2083-d1d9-570d-3d10e5ecdfe6">
+      <Execution id="5f134399-72e2-4e26-a6f4-05bfd3ef733f" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DataDrivenLoginTests" name="DangNhap_11_visual_user" />
+    </UnitTest>
+    <UnitTest name="POM_Login_Success" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="557b786b-f01d-c9de-04e6-7932d0efb8cf">
+      <Execution id="49ba1342-77d9-4a6c-9263-359be91c57cd" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.PomLoginTests" name="POM_Login_Success" />
+    </UnitTest>
+    <UnitTest name="DangNhap_04_trong" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="17659672-c03b-e826-e0a4-006ebc1da07c">
+      <Execution id="80767d23-4525-4fbe-b2da-c0c6abdfd80d" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DataDrivenLoginTests" name="DangNhap_04_trong" />
+    </UnitTest>
+    <UnitTest name="C1_JsAlert_Accept" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="b30facc2-15cf-63a4-2a3c-4036f9d4505d">
+      <Execution id="ffc0d81d-3104-4a3e-ac19-dca96e3a6916" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.AlertIframeTests" name="C1_JsAlert_Accept" />
+    </UnitTest>
+    <UnitTest name="DangNhap_10_STANDARD_USER" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="eea260ed-1e05-e552-b62e-48316ef3db60">
+      <Execution id="de4172ac-c5c1-494d-a5f2-7e0cd674722d" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DataDrivenLoginTests" name="DangNhap_10_STANDARD_USER" />
+    </UnitTest>
+    <UnitTest name="GetProductInformation" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="c1e02ffb-687f-d048-5bac-74e0b6f95ad6">
+      <Execution id="856243e1-b371-45bb-b95b-25b9dc4dc94f" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.LoginTests" name="GetProductInformation" />
+    </UnitTest>
+    <UnitTest name="AddProductToCart" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="8a94e02b-d534-9862-030b-7494e4de9a68">
+      <Execution id="b8859472-d1d6-43bf-a06f-c5609da3227c" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.LoginTests" name="AddProductToCart" />
+    </UnitTest>
+    <UnitTest name="DangNhap_08_ky_tu_dac_biet" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="f47247c8-047f-8ac7-fe77-15b8b4a122f3">
+      <Execution id="1098d55d-dca6-482a-a2bb-97be8e0a8561" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DataDrivenLoginTests" name="DangNhap_08_ky_tu_dac_biet" />
+    </UnitTest>
+    <UnitTest name="B1_SapXepPriceLowToHigh_GiaTangDan" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="601ad8f6-6f95-500d-f7c4-e15a02c07336">
+      <Execution id="92631807-b5dd-4f7e-812b-54ca68fc38be" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.SortTests" name="B1_SapXepPriceLowToHigh_GiaTangDan" />
+    </UnitTest>
+    <UnitTest name="POM_GetProductNames" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="8de7cd41-7cc2-0190-7b4b-3efd5fec3a28">
+      <Execution id="54d5b659-e185-48c3-bb6a-2ecc279b9396" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.PomLoginTests" name="POM_GetProductNames" />
+    </UnitTest>
+    <UnitTest name="A1_KhongWait_RotNoSuchElement" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="1014f073-4cdd-bfa3-b367-1a9daaccf6a4">
+      <Execution id="8ccc50e7-a89d-4369-8ff4-46e8802538d9" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DynamicLoadingTests" name="A1_KhongWait_RotNoSuchElement" />
+    </UnitTest>
+    <UnitTest name="DangNhap_03_problem_user" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="db30b674-2265-cc0d-133f-dc36e7385698">
+      <Execution id="0a2c36b9-6f66-4e6a-972c-ddf1e41c76b2" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DataDrivenLoginTests" name="DangNhap_03_problem_user" />
+    </UnitTest>
+    <UnitTest name="Login_Success" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="bb2c7ec5-dc61-bef1-6b3b-3caaa7c472f7">
+      <Execution id="d4208bf6-7362-407b-b867-f556a4af36af" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.LoginTests" name="Login_Success" />
+    </UnitTest>
+    <UnitTest name="DangNhap_05_standard_user" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="79026e7f-23f4-9aaa-fbcb-e1e875cddc47">
+      <Execution id="61e6f952-a223-42a6-8493-7811027625f5" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DataDrivenLoginTests" name="DangNhap_05_standard_user" />
+    </UnitTest>
+    <UnitTest name="A2_CoExplicitWait_Pass" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="200b688d-63af-dcda-76ca-5c4ffd75401d">
+      <Execution id="bd65808e-2598-4953-bce5-de0a406b9a9b" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.DynamicLoadingTests" name="A2_CoExplicitWait_Pass" />
+    </UnitTest>
+    <UnitTest name="POM_CheckProductCount" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="c88e135f-f471-7e52-1e79-f29f9853b593">
+      <Execution id="6cb8cbe9-dd56-400a-9718-cd27b98b95af" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.PomLoginTests" name="POM_CheckProductCount" />
+    </UnitTest>
+    <UnitTest name="Login_LockedOutUser" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="1ec001dc-f543-b366-b538-eadf28b2616c">
+      <Execution id="a3df660b-b605-4156-b950-3af9ac5597de" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.LoginTests" name="Login_LockedOutUser" />
+    </UnitTest>
+    <UnitTest name="OpenSauceDemo_CheckPageTitle" storage="d:\sof3091\lab01_tb01945_nhom07\firsttests\bin\debug\net10.0\firsttests.dll" id="eff05928-61b0-0c54-c445-c3cb3422a00b">
+      <Execution id="a19843e0-10cc-407c-aae4-4dc7977aef22" />
+      <TestMethod codeBase="D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="FirstTests.Tests.SauceDemoPageTests" name="OpenSauceDemo_CheckPageTitle" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="3811976c-a580-6b93-b3df-c00d0cc0127c" executionId="90dae51a-07f2-4325-ab6f-092d00505f24" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb2c7ec5-dc61-bef1-6b3b-3caaa7c472f7" executionId="d4208bf6-7362-407b-b867-f556a4af36af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e0c69d5-9e52-44d8-7cfd-66edc4e6c9a1" executionId="8290949e-b2bc-4e66-9a87-fdf982da970f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eff05928-61b0-0c54-c445-c3cb3422a00b" executionId="a19843e0-10cc-407c-aae4-4dc7977aef22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="941abd86-11b4-9a2c-8903-aaec04cf88d2" executionId="a398cd3d-d019-4f9c-8c51-f74f75829b9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f47247c8-047f-8ac7-fe77-15b8b4a122f3" executionId="1098d55d-dca6-482a-a2bb-97be8e0a8561" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e353fcad-5bc6-ad2d-c123-49a60e8554bc" executionId="8d030ef2-b8e0-40ba-a5e3-914b980699b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb656a3d-f9cc-726d-c06f-b349e4eeed8d" executionId="e6843af4-9d1a-4a40-b0df-4c97f05772eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="90801ede-b181-a873-ca07-40a920314330" executionId="bf4cf85f-6f14-451e-a22d-39906afc19d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1014f073-4cdd-bfa3-b367-1a9daaccf6a4" executionId="8ccc50e7-a89d-4369-8ff4-46e8802538d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eea260ed-1e05-e552-b62e-48316ef3db60" executionId="de4172ac-c5c1-494d-a5f2-7e0cd674722d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db30b674-2265-cc0d-133f-dc36e7385698" executionId="0a2c36b9-6f66-4e6a-972c-ddf1e41c76b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="efafad7e-b705-1b06-0971-9e8d156bd884" executionId="a2e781e8-293d-4e34-9ae0-fc4b9a20c70f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e7647de3-2083-d1d9-570d-3d10e5ecdfe6" executionId="5f134399-72e2-4e26-a6f4-05bfd3ef733f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30b0e967-b500-8950-d186-8faf500a5ba0" executionId="56ac7b00-d3a4-4602-88ca-2c6d1045d099" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a94e02b-d534-9862-030b-7494e4de9a68" executionId="b8859472-d1d6-43bf-a06f-c5609da3227c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72bb8061-ff12-0b2e-fd33-7048c68d78af" executionId="7ec5b74e-0c16-4611-b4b8-95d9340d5f68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79026e7f-23f4-9aaa-fbcb-e1e875cddc47" executionId="61e6f952-a223-42a6-8493-7811027625f5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c88e135f-f471-7e52-1e79-f29f9853b593" executionId="6cb8cbe9-dd56-400a-9718-cd27b98b95af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="601ad8f6-6f95-500d-f7c4-e15a02c07336" executionId="92631807-b5dd-4f7e-812b-54ca68fc38be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="557b786b-f01d-c9de-04e6-7932d0efb8cf" executionId="49ba1342-77d9-4a6c-9263-359be91c57cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ec001dc-f543-b366-b538-eadf28b2616c" executionId="a3df660b-b605-4156-b950-3af9ac5597de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17659672-c03b-e826-e0a4-006ebc1da07c" executionId="80767d23-4525-4fbe-b2da-c0c6abdfd80d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1e02ffb-687f-d048-5bac-74e0b6f95ad6" executionId="856243e1-b371-45bb-b95b-25b9dc4dc94f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8de7cd41-7cc2-0190-7b4b-3efd5fec3a28" executionId="54d5b659-e185-48c3-bb6a-2ecc279b9396" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="200b688d-63af-dcda-76ca-5c4ffd75401d" executionId="bd65808e-2598-4953-bce5-de0a406b9a9b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b30facc2-15cf-63a4-2a3c-4036f9d4505d" executionId="ffc0d81d-3104-4a3e-ac19-dca96e3a6916" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="27" executed="25" passed="24" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 5.0.0.0: Test execution started&#xD;
+Running all tests in D:\SOF3091\LAB01_TB01945_Nhom07\FirstTests\bin\Debug\net10.0\FirstTests.dll&#xD;
+   NUnit3TestExecutor discovered 25 of 27 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+[18:29:28.558] [INFO ] [T14] ===== BẮT ĐẦU: C1_JsAlert_Accept =====&#xD;
+[18:29:29.464] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:29:38.855] [INFO ] [T14] XONG: OK - C1_JsAlert_Accept&#xD;
+[18:29:39.038] [INFO ] [T14] ===== BẮT ĐẦU: C2_JsConfirm_Dismiss =====&#xD;
+[18:29:40.202] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:29:49.347] [INFO ] [T14] XONG: OK - C2_JsConfirm_Dismiss&#xD;
+[18:29:49.513] [INFO ] [T14] ===== BẮT ĐẦU: C3_JsPrompt_SendKeysAndAccept =====&#xD;
+[18:29:50.699] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:29:59.093] [INFO ] [T14] XONG: OK - C3_JsPrompt_SendKeysAndAccept&#xD;
+[18:29:59.253] [INFO ] [T14] ===== BẮT ĐẦU: C4_Iframe_GoChuVaoTrinhSoanThao =====&#xD;
+[18:30:00.455] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:30:13.660] [INFO ] [T14] XONG: OK - C4_Iframe_GoChuVaoTrinhSoanThao&#xD;
+[18:30:13.881] [INFO ] [T14] ===== BẮT ĐẦU: DangNhap_01_standard_user =====&#xD;
+[18:30:15.062] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:30:17.345] [ERROR] [T14] RỚT: DangNhap_01_standard_user | Tài khoản chuẩn — luồng thuận&#xD;
+[18:30:17.533] [INFO ] [T14] Đã chụp ảnh: DangNhap_01_standard_user_183017349.png&#xD;
+[18:30:17.728] [INFO ] [T14] ===== BẮT ĐẦU: DangNhap_02_locked_out_user =====&#xD;
+[18:30:18.905] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:30:24.022] [INFO ] [T14] XONG: OK - DangNhap_02_locked_out_user&#xD;
+[18:30:24.198] [INFO ] [T14] ===== BẮT ĐẦU: DangNhap_03_problem_user =====&#xD;
+[18:30:25.376] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:30:27.375] [INFO ] [T14] XONG: OK - DangNhap_03_problem_user&#xD;
+[18:30:27.555] [INFO ] [T14] ===== BẮT ĐẦU: DangNhap_04_trong =====&#xD;
+[18:30:28.721] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:30:33.805] [INFO ] [T14] XONG: OK - DangNhap_04_trong&#xD;
+[18:30:34.017] [INFO ] [T14] ===== BẮT ĐẦU: DangNhap_05_standard_user =====&#xD;
+[18:30:35.201] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:30:40.159] [INFO ] [T14] XONG: OK - DangNhap_05_standard_user&#xD;
+[18:30:40.353] [INFO ] [T14] ===== BẮT ĐẦU: DangNhap_06_khong_ton_tai =====&#xD;
+[18:30:41.537] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:30:46.663] [INFO ] [T14] XONG: OK - DangNhap_06_khong_ton_tai&#xD;
+[18:30:46.855] [INFO ] [T14] ===== BẮT ĐẦU: DangNhap_07__standard_user_ =====&#xD;
+[18:30:48.029] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:30:53.042] [INFO ] [T14] XONG: OK - DangNhap_07__standard_user_&#xD;
+[18:30:53.256] [INFO ] [T14] ===== BẮT ĐẦU: DangNhap_08_ky_tu_dac_biet =====&#xD;
+[18:30:54.391] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:30:59.373] [INFO ] [T14] XONG: OK - DangNhap_08_ky_tu_dac_biet&#xD;
+[18:30:59.559] [INFO ] [T14] ===== BẮT ĐẦU: DangNhap_09_chuoi_dai =====&#xD;
+[18:31:00.748] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:31:06.403] [INFO ] [T14] XONG: OK - DangNhap_09_chuoi_dai&#xD;
+[18:31:06.628] [INFO ] [T14] ===== BẮT ĐẦU: DangNhap_10_STANDARD_USER =====&#xD;
+[18:31:07.768] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:31:12.993] [INFO ] [T14] XONG: OK - DangNhap_10_STANDARD_USER&#xD;
+[18:31:13.214] [INFO ] [T14] ===== BẮT ĐẦU: DangNhap_11_visual_user =====&#xD;
+[18:31:14.374] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:31:16.519] [INFO ] [T14] XONG: OK - DangNhap_11_visual_user&#xD;
+A1_KhongWait_RotNoSuchElement: Bước 1: cố ý rớt để chụp ảnh minh chứng Phần A&#xD;
+[18:31:16.731] [INFO ] [T14] ===== BẮT ĐẦU: A2_CoExplicitWait_Pass =====&#xD;
+[18:31:17.937] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:31:31.350] [INFO ] [T14] XONG: OK - A2_CoExplicitWait_Pass&#xD;
+Nội dung: Hello World!&#xD;
+Explicit Wait hoạt động thành công!&#xD;
+&#xD;
+[18:31:31.583] [INFO ] [T14] ===== BẮT ĐẦU: AddProductToCart =====&#xD;
+[18:31:32.730] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:31:35.058] [INFO ] [T14] XONG: OK - AddProductToCart&#xD;
+Sản phẩm: Sauce Labs Backpack&#xD;
+Số lượng trong giỏ: 1&#xD;
+Kiểm tra giỏ hàng thành công!&#xD;
+&#xD;
+[18:31:35.259] [INFO ] [T14] ===== BẮT ĐẦU: GetProductInformation =====&#xD;
+[18:31:36.496] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:31:38.849] [INFO ] [T14] XONG: OK - GetProductInformation&#xD;
+Tên: Sauce Labs Backpack&#xD;
+Giá: $29.99&#xD;
+Tên: Sauce Labs Bike Light&#xD;
+Giá: $9.99&#xD;
+Tên: Sauce Labs Bolt T-Shirt&#xD;
+Giá: $15.99&#xD;
+Tên: Sauce Labs Fleece Jacket&#xD;
+Giá: $49.99&#xD;
+Tên: Sauce Labs Onesie&#xD;
+Giá: $7.99&#xD;
+Tên: Test.allTheThings() T-Shirt (Red)&#xD;
+Giá: $15.99&#xD;
+&#xD;
+[18:31:39.089] [INFO ] [T14] ===== BẮT ĐẦU: Login_LockedOutUser =====&#xD;
+[18:31:40.357] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:31:45.244] [INFO ] [T14] XONG: OK - Login_LockedOutUser&#xD;
+Đăng nhập thất bại đúng như mong đợi!&#xD;
+&#xD;
+[18:31:45.715] [INFO ] [T14] ===== BẮT ĐẦU: Login_Success =====&#xD;
+[18:31:47.295] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:31:50.027] [INFO ] [T14] XONG: OK - Login_Success&#xD;
+Đăng nhập thành công!&#xD;
+&#xD;
+[18:31:50.358] [INFO ] [T14] ===== BẮT ĐẦU: POM_CheckProductCount =====&#xD;
+[18:31:52.175] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:31:54.352] [INFO ] [T14] XONG: OK - POM_CheckProductCount&#xD;
+Số lượng sản phẩm: 6&#xD;
+&#xD;
+[18:31:54.631] [INFO ] [T14] ===== BẮT ĐẦU: POM_GetProductNames =====&#xD;
+[18:31:55.940] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:31:58.264] [INFO ] [T14] XONG: OK - POM_GetProductNames&#xD;
+Sản phẩm: Sauce Labs Backpack&#xD;
+Sản phẩm: Sauce Labs Bike Light&#xD;
+Sản phẩm: Sauce Labs Bolt T-Shirt&#xD;
+Sản phẩm: Sauce Labs Fleece Jacket&#xD;
+Sản phẩm: Sauce Labs Onesie&#xD;
+Sản phẩm: Test.allTheThings() T-Shirt (Red)&#xD;
+&#xD;
+[18:31:58.485] [INFO ] [T14] ===== BẮT ĐẦU: POM_Login_Success =====&#xD;
+[18:31:59.697] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:32:01.944] [INFO ] [T14] XONG: OK - POM_Login_Success&#xD;
+Đăng nhập bằng POM thành công!&#xD;
+&#xD;
+[18:32:02.138] [INFO ] [T14] ===== BẮT ĐẦU: OpenSauceDemo_CheckPageTitle =====&#xD;
+[18:32:03.405] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:32:05.123] [INFO ] [T14] XONG: OK - OpenSauceDemo_CheckPageTitle&#xD;
+Page title: Swag Labs&#xD;
+&#xD;
+D1_CoY_LamRot_DeChupAnh: Cố ý rớt để sinh ảnh minh chứng Phần D&#xD;
+[18:32:05.293] [INFO ] [T14] ===== BẮT ĐẦU: B1_SapXepPriceLowToHigh_GiaTangDan =====&#xD;
+[18:32:06.492] [INFO ] [T14] Mở chrome (headless=False), tới https://www.saucedemo.com/&#xD;
+[18:32:08.748] [INFO ] [T14] XONG: OK - B1_SapXepPriceLowToHigh_GiaTangDan&#xD;
+NUnit Adapter 5.0.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

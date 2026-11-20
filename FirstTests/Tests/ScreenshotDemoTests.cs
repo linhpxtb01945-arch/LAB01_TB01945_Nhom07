@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace FirstTests.Tests
 {
+    [Category("Demo")]
     public class ScreenshotDemoTests : BaseTest
     {
         [Test, Explicit("Cố ý rớt để sinh ảnh minh chứng Phần D")]

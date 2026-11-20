@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace FirstTests.Tests
 {
+    [Category("AlertIframe")]
     public class AlertIframeTests : BaseTest
     {
         [Test]

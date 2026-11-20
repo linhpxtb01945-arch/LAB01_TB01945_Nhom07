@@ -4,6 +4,8 @@ using NUnit.Framework;
 
 namespace FirstTests.Tests
 {
+    [Category("Wait")]
+    [Category("Slow")]
     public class DynamicLoadingTests : BaseTest
     {
         // BƯỚC 1: KHÔNG chờ -> cố ý RỚT với NoSuchElementException

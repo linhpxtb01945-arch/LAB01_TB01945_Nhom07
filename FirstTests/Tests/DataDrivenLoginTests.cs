@@ -5,6 +5,9 @@ using FirstTests.Pages;
 
 namespace FirstTests.Tests;
 
+[Category("Login")]
+[Category("DataDriven")]
+[Category("Slow")]
 public class DataDrivenLoginTests : BaseTest
 {
     // BẮT BUỘC static: NUnit gọi hàm này lúc DÒ test, trước khi tạo đối tượng của class.

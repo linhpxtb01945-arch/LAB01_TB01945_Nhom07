@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace FirstTests.Tests
 {
+    [Category("Inventory")]
     public class SortTests : BaseTest
     {
         [Test]
