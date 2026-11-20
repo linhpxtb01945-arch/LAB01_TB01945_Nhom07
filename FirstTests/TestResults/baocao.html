@@ -1,46 +1,184 @@
-﻿<!DOCTYPE html><html><head><meta charset="utf-8"><title>BĂ¡o cĂ¡o kiá»ƒm thá»­</title>
-<style>body{font-family:Arial,sans-serif;margin:2rem;color:#333}h1{margin-bottom:.2rem}
-.sum{display:flex;gap:1rem;margin:1.2rem 0}.sum div{padding:.8rem 1.4rem;background:#eee;font-size:1.1rem}
-.ok{color:#2e7d32;font-weight:bold}.bad{color:#c62828;font-weight:bold}
-table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:.4rem .6rem;text-align:left;font-size:.9rem}
-th{background:#dde6f3}tr.Passed td:nth-child(3){color:#2e7d32;font-weight:bold}tr.Failed{background:#fdecea}tr.Failed td:nth-child(3){color:#c62828;font-weight:bold}
-pre{white-space:pre-wrap;margin:0;font-size:.8rem;color:#c62828}</style></head><body>
-<h1>BĂ¡o cĂ¡o kiá»ƒm thá»­</h1>
-<div>Báº¯t Ä‘áº§u: 11/20/2026 18:29:27 &nbsp;|&nbsp; Tá»•ng thá»i gian: 00:02:41</div>
-<div class='sum'><div>Tá»•ng sá»‘ ca: <b>27</b></div><div class='ok'>Äáº­u: 24</div><div class='bad'>Rá»›t: 1</div><div>KhĂ¡c: 2</div></div>
-<table><tr><th>Class</th><th>Ca test</th><th>Káº¿t quáº£</th><th>Thá»i gian</th></tr>
-<tr class='Passed'><td>FirstTests.Tests.AlertIframeTests</td><td>C1_JsAlert_Accept</td><td>Passed</td><td>00:00:10.4825890</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.AlertIframeTests</td><td>C2_JsConfirm_Dismiss</td><td>Passed</td><td>00:00:10.4746170</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.AlertIframeTests</td><td>C3_JsPrompt_SendKeysAndAccept</td><td>Passed</td><td>00:00:09.7400680</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.AlertIframeTests</td><td>C4_Iframe_GoChuVaoTrinhSoanThao</td><td>Passed</td><td>00:00:14.6245280</td></tr>
-<tr class='Failed'><td>FirstTests.Tests.DataDrivenLoginTests</td><td>DangNhap_01_standard_user</td><td>Failed</td><td>00:00:03.8463670</td></tr>
-<tr class='Failed'><td colspan='4'><pre>T&#224;i khoản chuẩn — luồng thuận
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Báo cáo kiểm thử</title>
+<style>
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #172033;
+  background: #f4f6fb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 36px 22px; }
+.container { max-width: 1440px; margin: 0 auto; }
+.header {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  gap: 20px; margin-bottom: 26px;
+}
+.eyebrow { color: #64748b; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+h1 { margin: 7px 0 6px; font-size: 30px; letter-spacing: -.6px; }
+.subtitle { color: #64748b; font-size: 14px; }
+.summary {
+  display: grid; grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 16px; margin-bottom: 22px;
+}
+.card {
+  background: #fff; border: 1px solid #e7eaf1; border-radius: 14px;
+  padding: 19px 21px; box-shadow: 0 4px 14px rgba(20, 35, 70, .04);
+}
+.card-label { color: #64748b; font-size: 13px; font-weight: 600; }
+.card-value { margin-top: 8px; font-size: 30px; line-height: 1.1; font-weight: 750; }
+.total .card-value { color: #243b75; }
+.passed-card .card-value { color: #16834a; }
+.failed-card .card-value { color: #d33b43; }
+.other-card .card-value { color: #64748b; }
+.progress-wrap { background: #e8edf5; height: 7px; border-radius: 20px; margin-top: 14px; overflow: hidden; }
+.progress { height: 100%; width: 88.9%; background: #20a464; border-radius: 20px; }
+.panel {
+  background: #fff; border: 1px solid #e7eaf1; border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(20, 35, 70, .04); overflow: hidden;
+}
+.panel-head {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 16px; padding: 19px 22px; border-bottom: 1px solid #edf0f5;
+}
+.panel-title { font-size: 17px; font-weight: 700; }
+.search {
+  width: min(340px, 100%); padding: 10px 13px; border: 1px solid #dce2ec;
+  border-radius: 9px; outline: none; font: inherit; font-size: 13px;
+}
+.search:focus { border-color: #6685d8; box-shadow: 0 0 0 3px #6685d81c; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 760px; }
+th {
+  padding: 13px 18px; text-align: left; color: #64748b; background: #f8f9fc;
+  font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px;
+}
+td { padding: 13px 18px; border-top: 1px solid #edf0f5; font-size: 13px; vertical-align: top; }
+tbody tr:hover:not(.error-row) { background: #fafbfe; }
+.class-name { color: #64748b; }
+.test-name { color: #24324a; font-weight: 600; }
+.duration { color: #64748b; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.status { display: inline-block; padding: 5px 9px; border-radius: 20px; font-size: 11px; font-weight: 750; }
+.status.passed { color: #137a43; background: #e7f7ee; }
+.status.failed { color: #bd3038; background: #ffebec; }
+.status.other { color: #596579; background: #eef1f5; }
+.error-row td { background: #fff7f7; padding: 10px 18px 14px; }
+details summary { color: #bd3038; cursor: pointer; font-size: 12px; font-weight: 650; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; color: #9f2830; font: 12px/1.55 Consolas, monospace; margin: 10px 0 0; }
+.footer { text-align: center; color: #94a0b2; font-size: 12px; padding: 22px 0 4px; }
+.empty { padding: 25px; color: #64748b; text-align: center; }
+@media (max-width: 760px) {
+  body { padding: 22px 12px; }
+  .header { display: block; }
+  h1 { font-size: 25px; }
+  .summary { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .card { padding: 15px; }
+  .card-value { font-size: 25px; }
+  .panel-head { align-items: stretch; flex-direction: column; }
+  .search { width: 100%; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div>
+      <div class="eyebrow">FirstTests · Test Runner</div>
+      <h1>Báo cáo kiểm thử</h1>
+      <div class="subtitle">Thời điểm chạy: 20/11/2026 18:29:27 &nbsp;·&nbsp; Tổng thời gian: 00:02:41</div>
+    </div>
+  </header>
+
+  <section class="summary">
+    <div class="card total">
+      <div class="card-label">Tổng số ca</div>
+      <div class="card-value">27</div>
+      <div class="progress-wrap"><div class="progress"></div></div>
+    </div>
+    <div class="card passed-card">
+      <div class="card-label">Đạt (Passed)</div>
+      <div class="card-value">24</div>
+    </div>
+    <div class="card failed-card">
+      <div class="card-label">Không đạt (Failed)</div>
+      <div class="card-value">1</div>
+    </div>
+    <div class="card other-card">
+      <div class="card-label">Khác / Bỏ qua</div>
+      <div class="card-value">2</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <div class="panel-title">Chi tiết các ca kiểm thử</div>
+      <input id="search" class="search" type="search" placeholder="Tìm theo tên test hoặc class...">
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Class</th><th>Ca kiểm thử</th><th>Kết quả</th><th>Thời gian</th></tr></thead>
+        <tbody id="testRows">
+          <tr class='passed'><td class='class-name'>FirstTests.Tests.AlertIframeTests</td><td class='test-name'>C1_JsAlert_Accept</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:10.4825890</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.AlertIframeTests</td><td class='test-name'>C2_JsConfirm_Dismiss</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:10.4746170</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.AlertIframeTests</td><td class='test-name'>C3_JsPrompt_SendKeysAndAccept</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:09.7400680</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.AlertIframeTests</td><td class='test-name'>C4_Iframe_GoChuVaoTrinhSoanThao</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:14.6245280</td></tr>
+<tr class='failed'><td class='class-name'>FirstTests.Tests.DataDrivenLoginTests</td><td class='test-name'>DangNhap_01_standard_user</td><td><span class='status failed'>Không đạt</span></td><td class='duration'>00:00:03.8463670</td></tr>
+<tr class='error-row'><td colspan='4'><details><summary>Chi tiết lỗi</summary><pre>T&#224;i khoản chuẩn — luồng thuận
 Assert.That(trangSanPham.DaHienThi(), Is.EqualTo(mongDoiThanhCong))
   Expected: False
-  But was:  True</pre></td></tr>
-<tr class='Passed'><td>FirstTests.Tests.DataDrivenLoginTests</td><td>DangNhap_02_locked_out_user</td><td>Passed</td><td>00:00:06.4696190</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.DataDrivenLoginTests</td><td>DangNhap_03_problem_user</td><td>Passed</td><td>00:00:03.3569210</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.DataDrivenLoginTests</td><td>DangNhap_04_trong</td><td>Passed</td><td>00:00:06.4626720</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.DataDrivenLoginTests</td><td>DangNhap_05_standard_user</td><td>Passed</td><td>00:00:06.3357810</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.DataDrivenLoginTests</td><td>DangNhap_06_khong_ton_tai</td><td>Passed</td><td>00:00:06.5020070</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.DataDrivenLoginTests</td><td>DangNhap_07__standard_user_</td><td>Passed</td><td>00:00:06.4005320</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.DataDrivenLoginTests</td><td>DangNhap_08_ky_tu_dac_biet</td><td>Passed</td><td>00:00:06.3033469</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.DataDrivenLoginTests</td><td>DangNhap_09_chuoi_dai</td><td>Passed</td><td>00:00:07.0685780</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.DataDrivenLoginTests</td><td>DangNhap_10_STANDARD_USER</td><td>Passed</td><td>00:00:06.5858060</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.DataDrivenLoginTests</td><td>DangNhap_11_visual_user</td><td>Passed</td><td>00:00:03.5159890</td></tr>
-<tr class='NotExecuted'><td>FirstTests.Tests.DynamicLoadingTests</td><td>A1_KhongWait_RotNoSuchElement</td><td>NotExecuted</td><td>00:00:00.0003880</td></tr>
-<tr class='Failed'><td colspan='4'><pre>Bước 1: cố &#253; rớt để chụp ảnh minh chứng Phần A</pre></td></tr>
-<tr class='Passed'><td>FirstTests.Tests.DynamicLoadingTests</td><td>A2_CoExplicitWait_Pass</td><td>Passed</td><td>00:00:14.8522660</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.LoginTests</td><td>AddProductToCart</td><td>Passed</td><td>00:00:03.6753990</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.LoginTests</td><td>GetProductInformation</td><td>Passed</td><td>00:00:03.8299500</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.LoginTests</td><td>Login_LockedOutUser</td><td>Passed</td><td>00:00:06.6260210</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.LoginTests</td><td>Login_Success</td><td>Passed</td><td>00:00:04.6419840</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.PomLoginTests</td><td>POM_CheckProductCount</td><td>Passed</td><td>00:00:04.2726290</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.PomLoginTests</td><td>POM_GetProductNames</td><td>Passed</td><td>00:00:03.8543830</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.PomLoginTests</td><td>POM_Login_Success</td><td>Passed</td><td>00:00:03.6526100</td></tr>
-<tr class='Passed'><td>FirstTests.Tests.SauceDemoPageTests</td><td>OpenSauceDemo_CheckPageTitle</td><td>Passed</td><td>00:00:03.1536250</td></tr>
-<tr class='NotExecuted'><td>FirstTests.Tests.ScreenshotDemoTests</td><td>D1_CoY_LamRot_DeChupAnh</td><td>NotExecuted</td><td>00:00:00.0000600</td></tr>
-<tr class='Failed'><td colspan='4'><pre>Cố &#253; rớt để sinh ảnh minh chứng Phần D</pre></td></tr>
-<tr class='Passed'><td>FirstTests.Tests.SortTests</td><td>B1_SapXepPriceLowToHigh_GiaTangDan</td><td>Passed</td><td>00:00:03.6806560</td></tr>
-</table></body></html>
+  But was:  True</pre></details></td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.DataDrivenLoginTests</td><td class='test-name'>DangNhap_02_locked_out_user</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:06.4696190</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.DataDrivenLoginTests</td><td class='test-name'>DangNhap_03_problem_user</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:03.3569210</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.DataDrivenLoginTests</td><td class='test-name'>DangNhap_04_trong</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:06.4626720</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.DataDrivenLoginTests</td><td class='test-name'>DangNhap_05_standard_user</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:06.3357810</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.DataDrivenLoginTests</td><td class='test-name'>DangNhap_06_khong_ton_tai</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:06.5020070</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.DataDrivenLoginTests</td><td class='test-name'>DangNhap_07__standard_user_</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:06.4005320</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.DataDrivenLoginTests</td><td class='test-name'>DangNhap_08_ky_tu_dac_biet</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:06.3033469</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.DataDrivenLoginTests</td><td class='test-name'>DangNhap_09_chuoi_dai</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:07.0685780</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.DataDrivenLoginTests</td><td class='test-name'>DangNhap_10_STANDARD_USER</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:06.5858060</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.DataDrivenLoginTests</td><td class='test-name'>DangNhap_11_visual_user</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:03.5159890</td></tr>
+<tr class='other'><td class='class-name'>FirstTests.Tests.DynamicLoadingTests</td><td class='test-name'>A1_KhongWait_RotNoSuchElement</td><td><span class='status other'>Chưa chạy</span></td><td class='duration'>00:00:00.0003880</td></tr>
+<tr class='error-row'><td colspan='4'><details><summary>Chi tiết lỗi</summary><pre>Bước 1: cố &#253; rớt để chụp ảnh minh chứng Phần A</pre></details></td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.DynamicLoadingTests</td><td class='test-name'>A2_CoExplicitWait_Pass</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:14.8522660</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.LoginTests</td><td class='test-name'>AddProductToCart</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:03.6753990</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.LoginTests</td><td class='test-name'>GetProductInformation</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:03.8299500</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.LoginTests</td><td class='test-name'>Login_LockedOutUser</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:06.6260210</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.LoginTests</td><td class='test-name'>Login_Success</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:04.6419840</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.PomLoginTests</td><td class='test-name'>POM_CheckProductCount</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:04.2726290</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.PomLoginTests</td><td class='test-name'>POM_GetProductNames</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:03.8543830</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.PomLoginTests</td><td class='test-name'>POM_Login_Success</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:03.6526100</td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.SauceDemoPageTests</td><td class='test-name'>OpenSauceDemo_CheckPageTitle</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:03.1536250</td></tr>
+<tr class='other'><td class='class-name'>FirstTests.Tests.ScreenshotDemoTests</td><td class='test-name'>D1_CoY_LamRot_DeChupAnh</td><td><span class='status other'>Chưa chạy</span></td><td class='duration'>00:00:00.0000600</td></tr>
+<tr class='error-row'><td colspan='4'><details><summary>Chi tiết lỗi</summary><pre>Cố &#253; rớt để sinh ảnh minh chứng Phần D</pre></details></td></tr>
+<tr class='passed'><td class='class-name'>FirstTests.Tests.SortTests</td><td class='test-name'>B1_SapXepPriceLowToHigh_GiaTangDan</td><td><span class='status passed'>Đạt</span></td><td class='duration'>00:00:03.6806560</td></tr>
 
+        </tbody>
+      </table>
+      <div id="empty" class="empty" hidden>Không tìm thấy ca kiểm thử phù hợp.</div>
+    </div>
+  </section>
+  <div class="footer">Báo cáo được tạo tự động từ kết quả kiểm thử TRX.</div>
+</div>
+<script>
+const search = document.getElementById('search');
+const body = document.getElementById('testRows');
+const empty = document.getElementById('empty');
+search.addEventListener('input', () => {
+  const q = search.value.toLocaleLowerCase('vi');
+  const rows = Array.from(body.querySelectorAll('tr')).filter(r => !r.classList.contains('error-row'));
+  let visible = 0;
+  rows.forEach(r => {
+    const match = r.innerText.toLocaleLowerCase('vi').includes(q);
+    r.hidden = !match;
+    const next = r.nextElementSibling;
+    if (next && next.classList.contains('error-row')) next.hidden = !match;
+    if (match) visible++;
+  });
+  empty.hidden = visible !== 0;
+});
+</script>
+</body>
+</html>
